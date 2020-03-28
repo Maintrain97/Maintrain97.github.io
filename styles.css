@@ -9,20 +9,8 @@ body, html {height: 100%}
   background-size: cover;
 }
 
-.back-shadow-rounded{
-    background-color: rgba(0,0,0,0.5);
-    box-shadow:  0px 0px .5em .5em rgba(0,0,0,0.5);
-    text-align: center;
-  }
-
-.back-shadow-rounded{
-  padding: 1em 1em 1em 1em;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 1em;
-  box-shadow:  0px 0px .5em .5em rgba(0,0,0,0.5);
-  text-align: center;
-  width: 30%;
-  min-width: 400px;
+.mobile{
+  min-width: 0px;
 }
 
 .centered {
@@ -37,9 +25,14 @@ body, html {height: 100%}
     max-width: 100px;
 }
 
+
 @media only screen and (max-width: 600px) {
     .logo {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .mobile-width {
+        width: 87% !important;
     }
   }
