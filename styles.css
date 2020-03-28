@@ -5,7 +5,9 @@ body, html {height: 100%}
 .bgimg {
   background-image: url('/images/dgtt.png');
   min-height: 100%;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -25,6 +27,10 @@ body, html {height: 100%}
     max-width: 100px;
 }
 
+.none {
+  display: none;
+}
+
 
 @media only screen and (max-width: 600px) {
     .logo {
@@ -34,5 +40,14 @@ body, html {height: 100%}
 
     .mobile-width {
         width: 87% !important;
+    }
+
+    .none {display: block;}
+
+    .centered{
+      position: relative;
+      transform: none;
+      left: auto;
+      right: auto;
     }
   }
