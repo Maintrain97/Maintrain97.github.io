@@ -9,3 +9,17 @@ function accordion(sid) {
     x.previousElementSibling.className.replace(" w3-light-gray", "");
   }
 }
+
+window.onscroll = function() {scrollMenu()};
+function scrollMenu() {
+    /* https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h
+    var navbar = document.getElementById("nav");
+    var logo = document.getElementById("logo");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+        logo.hidden = true;
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+        logo.hidden = false;
+    }*/
+}
