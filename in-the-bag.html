@@ -1,120 +1,228 @@
 <!DOCTYPE html>
 <html>
-<title>In The Bag</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="tools.js" type="text/javascript"></script>
+  <title>In The Bag</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="tools.js" type="text/javascript"></script>
 
-<head>
-  <link rel="icon" href="/images/initials white.png">
-</head>
+  <head>
+    <link rel="icon" href="/images/initials white.png" />
+  </head>
 
-<body>
-  <div class="bgimg w3-text-white">
+  <body>
+    <div class="bgimg w3-text-white">
+      <div class="w3-top">
+        <div id="nav" class="w3-bar w3-padding-large">
+          <img
+            id="logo"
+            src="/images/logo-transparent-black.svg"
+            class="w3-transparent logo"
+            style="filter:invert()"
+          />
+          <a
+            class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0);"
+            onclick="toggle()"
+            title="Toggle Navigation Menu"
+          >
+            <i class="fa fa-lg fa-bars"></i>
+          </a>
+          <a
+            href="/index.html"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
+            >About</a
+          >
+          <a
+            href="/in-the-bag.html"
+            id="active"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-opacity w3-black"
+            >In The Bag</a
+          >
+        </div>
 
-    <!--<div class="w3-top">-->
-    <div class="w3-bar w3-padding-large" id="nav">
-        <img id="logo"src="/images/logo-transparent-black.svg" class="logo w3-transparent w3-mobile" style="filter:invert()">
-        <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-right w3-transparent">Home</a>
-        <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-right w3-transparent">About</a>
-        <a href="/in-the-bag.html" class="w3-bar-item w3-button w3-mobile w3-right w3-black w3-opacity">In The Bag</a>
-    </div>
-    <!--</div><br><br><br><br><br>-->
+        <!-- nav for mobile -->
+        <div
+          id="navSmall"
+          class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+        >
+          <a
+            href="/index.html"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right"
+            >About</a
+          >
+          <a
+            href="/in-the-bag.html"
+            id="activeSmall"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right w3-white"
+            >In The Bag</a
+          >
+        </div>
+      </div>
 
-    <div class="mobile-width w3-mobile w3-margin-top w3-black w3-opacity-min w3-round-xxlarge" style="width:50%;margin:auto;">
-        <button onclick="accordion('Putters')" class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row">
-            <div class="w3-container w3-cell w3-cell-middle">
-                Putters&ensp;&nbsp;<i class="fa fa-caret-down"></i>
+      <br /><br /><br /><br /><br class="hd-mob" />
+
+      <div
+        class="mobile-width w3-mobile w3-margin-top w3-black w3-opacity-min w3-round-xxlarge"
+        style="width:50%;margin:auto;"
+      >
+        <button
+          onclick="accordion('Putters')"
+          class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
+        >
+          <div class="w3-container w3-cell w3-cell-middle">
+            Putters&ensp;&nbsp;<i class="fa fa-caret-down"></i>
+          </div>
+          <div
+            class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
+            style="width:100%"
+          >
+            <div
+              class="w3-container w3-round-xxlarge w3-green"
+              style="width:26%"
+            >
+              26%
             </div>
-            <div class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell" style="width:100%">
-                <div class="w3-container w3-round-xxlarge w3-green" style="width:26%">26%</div>
-            </div>
+          </div>
         </button>
 
-            
-            <div id="Putters" class="w3-container w3-hide">
-                <ul>
-                  <li>Beetle</li>
-                  <li>Swan Reborn</li>
-                  <li>Maiden</li>
-                  <li>Shield x2</li>
-                  <li>Harp</li>
-                </ul>
-            </div>
-    </div>
+        <div id="Putters" class="w3-container w3-hide">
+          <ul>
+            <li>Beetle</li>
+            <li>Swan Reborn</li>
+            <li>Maiden</li>
+            <li>Shield x2</li>
+            <li>Harp</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge" style="width:50%;margin:auto;">
-        <button onclick="accordion('Mids')" class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row">
-            <div class="w3-container w3-cell w3-cell-middle">
-                Mids&emsp;&emsp;<i class="fa fa-caret-down"></i>
+      <div
+        class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge"
+        style="width:50%;margin:auto;"
+      >
+        <button
+          onclick="accordion('Mids')"
+          class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
+        >
+          <div class="w3-container w3-cell w3-cell-middle">
+            Mids&emsp;&emsp;<i class="fa fa-caret-down"></i>
+          </div>
+          <div
+            class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
+            style="width:100%"
+          >
+            <div
+              class="w3-container w3-round-xxlarge w3-blue"
+              style="width:17%"
+            >
+              17%
             </div>
-            <div class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell" style="width:100%">
-                <div class="w3-container w3-round-xxlarge w3-blue" style="width:17%">17%</div>
-            </div>
+          </div>
         </button>
 
-            
-            <div id="Mids" class="w3-container w3-hide">
-              <ul>
-                  <li>Tursas</li>
-                  <li>Gatekeeper</li>
-                  <li>Warship</li>
-                  <li>Anvil</li>
-                </ul>
-            </div>
-    </div>
+        <div id="Mids" class="w3-container w3-hide">
+          <ul>
+            <li>Tursas</li>
+            <li>Gatekeeper</li>
+            <li>Warship</li>
+            <li>Anvil</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge" style="width:50%;margin:auto;">
-        <button onclick="accordion('Fairway')" class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row">
-            <div class="w3-container w3-cell w3-cell-middle">
-                Fairway&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+      <div
+        class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge"
+        style="width:50%;margin:auto;"
+      >
+        <button
+          onclick="accordion('Fairway')"
+          class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
+        >
+          <div class="w3-container w3-cell w3-cell-middle">
+            Fairway&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+          </div>
+          <div
+            class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
+            style="width:100%"
+          >
+            <div
+              class="w3-container w3-round-xxlarge w3-deep-orange"
+              style="width:22%"
+            >
+              22%
             </div>
-            <div class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell" style="width:100%">
-                <div class="w3-container w3-round-xxlarge w3-deep-orange" style="width:22%">22%</div>
-            </div>
+          </div>
         </button>
 
-            
-            <div id="Fairway" class="w3-container w3-hide">
-            <ul>
-                  <li>Stag</li>
-                  <li>Longbowman x3</li>
-                  <li>Ahti</li>
-                </ul>
-            </div>
-    </div>
+        <div id="Fairway" class="w3-container w3-hide">
+          <ul>
+            <li>Stag</li>
+            <li>Longbowman x3</li>
+            <li>Ahti</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="mobile-width w3-mobile w3-black w3-section w3-opacity-min w3-round-xxlarge" style="width:50%;margin:auto;">
-        <button onclick="accordion('Distance')" class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row">
-            <div class="w3-container w3-cell w3-cell-middle">
-                Distance&nbsp;<i class="fa fa-caret-down"></i>
+      <div
+        class="mobile-width w3-mobile w3-black w3-section w3-opacity-min w3-round-xxlarge"
+        style="width:50%;margin:auto;"
+      >
+        <button
+          onclick="accordion('Distance')"
+          class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
+        >
+          <div class="w3-container w3-cell w3-cell-middle">
+            Distance&nbsp;<i class="fa fa-caret-down"></i>
+          </div>
+          <div
+            class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
+            style="width:100%"
+          >
+            <div class="w3-container w3-round-xxlarge w3-red" style="width:35%">
+              35%
             </div>
-            <div class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell" style="width:100%">
-                <div class="w3-container w3-round-xxlarge w3-red" style="width:35%">35%</div>
-            </div>
+          </div>
         </button>
 
-            
-            <div id="Distance" class="w3-container w3-hide">
-            <ul>
-                  <li>Northman</li>
-                  <li>World x2</li>
-                  <li>Giant x4</li>
-                  <li>War Horse</li>
-                </ul>
-            </div>
+        <div id="Distance" class="w3-container w3-hide">
+          <ul>
+            <li>Northman</li>
+            <li>World x2</li>
+            <li>Giant x4</li>
+            <li>War Horse</li>
+          </ul>
+        </div>
+      </div>
+
+      <img
+        src="/images/westside.svg"
+        style="filter:invert() drop-shadow(0px 0px 15px black);max-width:150px;position:absolute;left: 50%;transform: translate(-50%, 0%);"
+      />
+
+      <br /><br /><br /><br /><br /><br /><br /><br />
     </div>
-
-    <img src="/images/westside.svg" style="filter:invert();max-width:150px;position: absolute;left: 50%;transform: translate(-50%, 0%);">
-
-    <br><br><br><br><br><br><br><br>
-
-</div>
-
-</body>
-
+  </body>
 </html>

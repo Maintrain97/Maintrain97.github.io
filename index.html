@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html>
-<title>Alex Main</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Alex Main</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="tools.js" type="text/javascript"></script>
 
-<head>
-  <link rel="icon" href="/images/initials white.png">
-</head>
+  <head>
+    <link rel="icon" href="/images/initials white.png" />
+  </head>
 
-<body>
-  <div class="bgimg w3-text-white">
+  <body>
+    <div class="bgimg w3-text-white">
+      <div class="w3-top">
+        <div id="nav" class="w3-bar w3-padding-large">
+          <img
+            id="logo"
+            src="/images/logo-transparent-black.svg"
+            class="w3-transparent logo"
+            style="filter:invert()"
+          />
+          <a
+            class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            href="javascript:void(0);"
+            onclick="toggle()"
+            title="Toggle Navigation Menu"
+          >
+            <i class="fa fa-lg fa-bars"></i>
+          </a>
+          <a
+            href="/index.html"
+            id="active"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-opacity w3-black"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
+            >About</a
+          >
+          <a
+            href="/in-the-bag.html"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
+            >In The Bag</a
+          >
+        </div>
 
-    <div class="w3-bar w3-padding-large">
-      <img src="/images/logo-transparent-black.svg" class="logo w3-transparent w3-mobile" style="filter:invert()">
-      <a href="/index.html" class="w3-bar-item w3-button w3-mobile w3-right w3-black w3-opacity">Home</a>
-      <a href="/about.html" class="w3-bar-item w3-button w3-mobile w3-right w3-transparent">About</a>
-      <a href="/in-the-bag.html" class="w3-bar-item w3-button w3-mobile w3-right w3-transparent">In The Bag</a>
-    </div>
+        <!-- nav for mobile -->
+        <div
+          id="navSmall"
+          class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+        >
+          <a
+            href="/index.html"
+            id="activeSmall"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right w3-white"
+            >Home</a
+          >
+          <a
+            href="/about.html"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right"
+            >About</a
+          >
+          <a
+            href="/in-the-bag.html"
+            onClick="toggle()"
+            class="w3-bar-item w3-button w3-mobile w3-right"
+            >In The Bag</a
+          >
+        </div>
+      </div>
 
-    <div class="centered w3-margin-top w3-mobile w3-black w3-opacity-min w3-round-xxlarge w3-padding-large">
-      <h1 class="w3-jumbo w3-animate-top w3-center">ALEX MAIN</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">
-          <a href="https://www.linkedin.com/in/alexandermain/" target="_blank">LinkedIn</a> • 
-          <a href="mailto:mail@alexma.in" target="_blank">Email</a> • 
+      <br /><br /><br /><br /><br class="hd-mob" />
+
+      <div
+        class="centered w3-margin-top w3-mobile w3-black w3-opacity-min w3-round-xxlarge w3-padding-large"
+      >
+        <h1 class="w3-jumbo w3-animate-top w3-center">ALEX MAIN</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%" />
+        <p class="w3-large w3-center">
+          <a href="https://www.linkedin.com/in/alexandermain/" target="_blank"
+            >LinkedIn</a
+          >
+          • <a href="mailto:mail@alexma.in" target="_blank">Email</a> •
           <a href="https://www.pdga.com/player/101190/" target="_blank">PDGA</a>
-      </p>
-    </div>
+        </p>
+      </div>
 
-    <div class="w3-display-bottomleft w3-padding-large">
+      <div class="w3-display-bottomleft w3-padding-large"></div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
