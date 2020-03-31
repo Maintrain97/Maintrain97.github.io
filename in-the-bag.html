@@ -23,20 +23,22 @@
     <div class="bgimg w3-text-white">
       <div class="w3-top">
         <div id="nav" class="w3-bar w3-padding-large">
-          <img
-            id="logo"
-            src="/images/logo-transparent-black.svg"
-            class="w3-transparent logo"
-            style="filter:invert()"
-          />
-          <a
-            class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-            href="javascript:void(0);"
-            onclick="toggle()"
-            title="Toggle Navigation Menu"
-          >
-            <i class="fa fa-lg fa-bars"></i>
+          <a href="/index.html">
+            <img
+              id="logo"
+              src="/images/logo-transparent-black.svg"
+              class="w3-transparent logo"
+              style="filter:invert()"
+            />
           </a>
+          <div
+            class="container w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+            onclick="hamburger(this);toggle();"
+          >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
           <a
             href="/index.html"
             class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
@@ -89,7 +91,7 @@
         style="width:50%;margin:auto;"
       >
         <button
-          onclick="accordion('Putters')"
+          onclick="accordionAll('Putters')"
           class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
         >
           <div class="w3-container w3-cell w3-cell-middle">
@@ -124,7 +126,7 @@
         style="width:50%;margin:auto;"
       >
         <button
-          onclick="accordion('Mids')"
+          onclick="accordionAll('Mids')"
           class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
         >
           <div class="w3-container w3-cell w3-cell-middle">
@@ -158,7 +160,7 @@
         style="width:50%;margin:auto;"
       >
         <button
-          onclick="accordion('Fairway')"
+          onclick="accordionAll('Fairway')"
           class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
         >
           <div class="w3-container w3-cell w3-cell-middle">
@@ -191,7 +193,7 @@
         style="width:50%;margin:auto;"
       >
         <button
-          onclick="accordion('Distance')"
+          onclick="accordionAll('Distance')"
           class="w3-large w3-button w3-block w3-left-align w3-round-xxlarge w3-cell-row"
         >
           <div class="w3-container w3-cell w3-cell-middle">
