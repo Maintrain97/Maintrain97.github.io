@@ -29,5 +29,5 @@ gtag("config", "UA-162603504-1");
   "ga"
 );
 
-ga("create", "UA-XXXXX-Y", "auto");
+ga("create", "UA-162603504-1", "auto");
 ga("send", "pageview");
