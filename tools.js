@@ -2,11 +2,15 @@ var toggleOpen = false;
 var fromTop;
 widthCalc();
 
-window.onresize = function() {
+window.onload = function () {
+  setActive();
+};
+
+window.onresize = function () {
   widthCalc();
 };
 
-window.onscroll = function() {
+window.onscroll = function () {
   scrollMenu();
 };
 
@@ -14,7 +18,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -30,13 +34,12 @@ function widthCalc() {
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
-  fromTop = w > 600 ? 75 : 40;
+  fromTop = w > 600 ? 40 : 20;
 }
 
 function accordionAll(sid) {
   var cats = ["Putters", "Mids", "Fairway", "Distance"];
   for (var i = 0; i < cats.length; i++) {
-    console.log(cats[i] + " " + sid);
     if (cats[i] === sid) {
       accordion(cats[i]);
     } else {
@@ -90,6 +93,30 @@ function scrollMenu() {
 
 function hamburger(t) {
   t.classList.toggle("change");
+}
+
+function setActive() {
+  var url = window.location.href;
+  var doc = url.split("/");
+  var file = doc[doc.length - 1];
+  file = file.substring(0, file.length - 5);
+
+  var act =
+    document.getElementById(file) == null
+      ? document.getElementById("index")
+      : document.getElementById(file);
+  act.id = "active";
+  act.className = act.className.replace(
+    "w3-transparent",
+    "w3-black w3-opacity"
+  );
+
+  var actSmall =
+    document.getElementById(file + "Small") == null
+      ? document.getElementById("indexSmall")
+      : document.getElementById(file + "Small");
+  actSmall.id = "activeSmall";
+  actSmall.className += " w3-white";
 }
 
 function toggle() {

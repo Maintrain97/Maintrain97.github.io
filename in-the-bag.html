@@ -18,78 +18,27 @@
   <head>
     <link rel="icon" href="/images/initials white.png" />
     <script src="analytics.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("navbar.html");
+      });
+    </script>
   </head>
 
   <body>
     <div class="bgimg w3-text-white">
-      <div class="w3-top">
-        <div id="nav" class="w3-bar w3-padding-large">
-          <a href="/">
-            <img
-              id="logo"
-              src="/images/logo-transparent-black.svg"
-              class="w3-transparent logo"
-              style="filter:invert()"
-            />
-          </a>
-          <div
-            class="container w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-            onclick="hamburger(this);toggle();"
-          >
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-          <a
-            href="/"
-            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
-            >Home</a
-          >
-          <a
-            href="/about.html"
-            class="w3-bar-item w3-button w3-hide-small w3-right w3-transparent"
-            >About</a
-          >
-          <a
-            href="/in-the-bag.html"
-            id="active"
-            class="w3-bar-item w3-button w3-hide-small w3-right w3-opacity w3-black"
-            >In The Bag</a
-          >
-        </div>
-
-        <!-- nav for mobile -->
-        <div
-          id="navSmall"
-          class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
-        >
-          <a
-            href="/index.html"
-            onClick="toggle()"
-            class="w3-bar-item w3-button w3-mobile w3-right"
-            >Home</a
-          >
-          <a
-            href="/about.html"
-            onClick="toggle()"
-            class="w3-bar-item w3-button w3-mobile w3-right"
-            >About</a
-          >
-          <a
-            href="/in-the-bag.html"
-            id="activeSmall"
-            onClick="toggle()"
-            class="w3-bar-item w3-button w3-mobile w3-right w3-white"
-            >In The Bag</a
-          >
-        </div>
-      </div>
+      <div id="header"></div>
 
       <br /><br /><br /><br /><br class="hd-mob" />
 
       <div
         class="mobile-width w3-mobile w3-margin-top w3-black w3-opacity-min w3-round-xxlarge"
-        style="width:50%;margin:auto;"
+        style="width: 50%; margin: auto;"
       >
         <button
           onclick="accordionAll('Putters')"
@@ -100,11 +49,11 @@
           </div>
           <div
             class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
-            style="width:100%"
+            style="width: 100%;"
           >
             <div
               class="w3-container w3-round-xxlarge w3-green"
-              style="width:26%"
+              style="width: 26%;"
             >
               26%
             </div>
@@ -124,7 +73,7 @@
 
       <div
         class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge"
-        style="width:50%;margin:auto;"
+        style="width: 50%; margin: auto;"
       >
         <button
           onclick="accordionAll('Mids')"
@@ -135,11 +84,11 @@
           </div>
           <div
             class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
-            style="width:100%"
+            style="width: 100%;"
           >
             <div
               class="w3-container w3-round-xxlarge w3-blue"
-              style="width:17%"
+              style="width: 17%;"
             >
               17%
             </div>
@@ -158,7 +107,7 @@
 
       <div
         class="mobile-width w3-mobile w3-black w3-margin-top w3-opacity-min w3-round-xxlarge"
-        style="width:50%;margin:auto;"
+        style="width: 50%; margin: auto;"
       >
         <button
           onclick="accordionAll('Fairway')"
@@ -169,11 +118,11 @@
           </div>
           <div
             class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
-            style="width:100%"
+            style="width: 100%;"
           >
             <div
               class="w3-container w3-round-xxlarge w3-deep-orange"
-              style="width:22%"
+              style="width: 22%;"
             >
               22%
             </div>
@@ -191,7 +140,7 @@
 
       <div
         class="mobile-width w3-mobile w3-black w3-section w3-opacity-min w3-round-xxlarge"
-        style="width:50%;margin:auto;"
+        style="width: 50%; margin: auto;"
       >
         <button
           onclick="accordionAll('Distance')"
@@ -202,9 +151,12 @@
           </div>
           <div
             class="w3-xlarge w3-dark-gray w3-round-xxlarge w3-cell"
-            style="width:100%"
+            style="width: 100%;"
           >
-            <div class="w3-container w3-round-xxlarge w3-red" style="width:35%">
+            <div
+              class="w3-container w3-round-xxlarge w3-red"
+              style="width: 35%;"
+            >
               35%
             </div>
           </div>
@@ -222,7 +174,13 @@
 
       <img
         src="/images/westside.svg"
-        style="filter:invert() drop-shadow(0px 0px 15px black);max-width:150px;position:absolute;left: 50%;transform: translate(-50%, 0%);"
+        style="
+          filter: invert() drop-shadow(0px 0px 15px black);
+          max-width: 150px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0%);
+        "
       />
 
       <br /><br /><br /><br /><br /><br /><br /><br />
