@@ -28,6 +28,18 @@ html {
   transform: translate(-50%, -50%);
 }
 
+.index::before {
+  content: "";
+  background-color: #000;
+  border-radius: 10%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
 .logo {
   width: 100px;
   max-width: 100px;
@@ -49,6 +61,11 @@ html {
 .container {
   display: inline-block;
   cursor: pointer;
+}
+
+.icon-bar {
+  position: relative;
+  max-width: 50px;
 }
 
 .bar1,
