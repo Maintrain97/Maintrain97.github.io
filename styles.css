@@ -10,6 +10,7 @@ html {
 
 .bgimg {
   background-image: url("/images/dgtt.png");
+  background-image: image("/images/dgtt.webp", "/images/dgtt.png");
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
