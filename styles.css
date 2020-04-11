@@ -9,7 +9,7 @@ html {
 }
 
 .bgimg {
-  background-image: url("/images/dgtt.svg");
+  background-image: url("/images/dgtt.png");
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
