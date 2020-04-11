@@ -8,9 +8,17 @@ html {
   height: 100%;
 }
 
-.bgimg {
+.webp .bgimg {
+  background-image: url("/images/dgtt.webp");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.no-webp .bgimg {
   background-image: url("/images/dgtt.png");
-  background-image: image("/images/dgtt.webp", "/images/dgtt.png");
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
