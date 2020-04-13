@@ -9,19 +9,19 @@ html {
 }
 
 .webp .bgimg {
-  background-image: url("/images/dgtt.webp");
+  background-image: url("/images/mett.webp");
   min-height: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .no-webp .bgimg {
-  background-image: url("/images/dgtt.png");
+  background-image: url("/images/me.jpg");
   min-height: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
